@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class Form extends Component {
+class MovieForm extends Component {
 
     // constructors are initialized when Form is created (instantiated)
     // we set the initial state of our form and save it to state.
@@ -9,14 +9,7 @@ class Form extends Component {
         super(props); //inheriting props from Component
 
 
-    //     title: "The Shawshank Redemption",
-    //   actors: ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
-    //   plot: "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-    //   genre: "Drama",
-    //   imdbRating: 9.3,
-    //   director: "Frank Darabont",
-    //   year: 1994,
-    //   dateAdded: new Date(),
+   
 
         // set the initial state of the Form
         this.initalState = {
@@ -120,7 +113,7 @@ class Form extends Component {
                     /><br/>
                 <label htmlFor="dateAdded">DateAdded:</label><br/>
                 <input 
-                    type="text" 
+                    type="date" 
                     id="dateAdded" 
                     name="dateAdded"
                     value={dateAdded} 
@@ -134,4 +127,4 @@ class Form extends Component {
     }
 }
 
-export default Form
+export default MovieForm

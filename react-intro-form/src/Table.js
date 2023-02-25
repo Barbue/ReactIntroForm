@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 /**
  * Table React Component 
  * 
@@ -65,7 +66,7 @@ const rows = props.data.map((row, index) => {
           <td>{row.imdbRating}</td>
           <td>{row.director}</td>
           <td>{row.year}</td>
-          <td>{row.datAdded}</td>  
+          <td>{row.dateAdded}</td> 
           <td><button onClick={() => props.removeMovie(index)}> Delete</button></td>
         </tr>
       )
