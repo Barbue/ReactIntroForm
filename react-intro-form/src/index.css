@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.title {
+  text-align: center;
+  font-size: 400%;
+  text-transform: uppercase;
+  text-decoration-line: underline;
+  font-stretch: expanded;
+  font-style: italic;
+  text-decoration-color: rgb(238, 3, 3);
+  color: blue;
+  
+
+}
+

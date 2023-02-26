@@ -7,14 +7,11 @@ import Form from './MovieForm'
 function MovieListTitle(){
 
   return <div>
-         <h1>Hollywood Movies</h1>
+         <h1 className='title'>Hollywood Movies</h1>
   </div>
 
 
 }
-
-
-
 
 class App extends Component {
 
