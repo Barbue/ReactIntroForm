@@ -26,9 +26,6 @@ our table code more readable
 
 
 
-
-
-
 //TABLE HEADER SIMPLE COMPONENT
 const MovieTableHeader = () => {
     return (

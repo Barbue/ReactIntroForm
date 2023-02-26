@@ -4,18 +4,17 @@ import './App.css';
 import Table from './Table' 
 import Form from './MovieForm'
 
+function MovieListTitle(){
+
+  return <div>
+         <h1>Hollywood Movies</h1>
+  </div>
 
 
-
-function MovieForm(props) {
-return  <div> 
-  <title>Movie Form</title>
-
-
-
-
-</div>
 }
+
+
+
 
 class App extends Component {
 
@@ -150,7 +149,9 @@ removeMovie = (index) => {
 
 
 
-
+   
+    
+    
 
 
 
@@ -169,7 +170,7 @@ return (
 
   <div className="container">
 
-<MovieForm  />
+     <MovieListTitle/>
    
      <Table
        movieData={this.state.movies}
