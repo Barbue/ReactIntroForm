@@ -2,13 +2,24 @@
 import React, { Component } from 'react';
 import './App.css';
 import Table from './Table' 
-import Form from './MovieForm'
+import MovieForm from './MovieForm'
 
 
 
+function MovieListTitle(){
+  return <div>
+         <h1 className='title'>Hollywood Movies</h1>
+  </div>
+}
+
+function AddMovieHeader(){
+  return <div>
+         <h1 className='AddMovie'>Add A Movie To The List</h1>
+         
+  </div>
 
 
-
+}
 
 
 
@@ -167,14 +178,16 @@ return (
 
   <div className="container">
 
-     <MovieListTitle/>
+<MovieListTitle />
    
      <Table
        movieData={this.state.movies}
        removeMovie={this.removeMovie}
      />
-     <AddMovie />
-     <Form  addMovie={this.addMovie}/>
+     
+     <AddMovieHeader />
+     <MovieForm  addMovie={this.addMovie}/>
+     
      
      </div>
     )
