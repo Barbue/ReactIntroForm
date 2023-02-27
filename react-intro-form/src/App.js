@@ -4,14 +4,13 @@ import './App.css';
 import Table from './Table' 
 import Form from './MovieForm'
 
-function MovieListTitle(){
-
-  return <div>
-         <h1 className='title'>Hollywood Movies</h1>
-  </div>
 
 
-}
+
+
+
+
+
 
 class App extends Component {
 
@@ -24,7 +23,7 @@ class App extends Component {
       imdbRating: 9.2,
       director: "Francis Ford Coppola",
       year: 1972,
-      dateAdded: '2023-02-22'
+      dateAdded: '2023-02-25'
     },
     {
       title: "The Shawshank Redemption",
@@ -34,7 +33,7 @@ class App extends Component {
       imdbRating: 9.3,
       director: "Frank Darabont",
       year: 1994,
-      dateAdded: '2023-02-20'
+      dateAdded: '2023-02-22'
     },
     {
       title: "The Dark Knight",
@@ -44,7 +43,7 @@ class App extends Component {
       imdbRating: 9.0,
       director: "Christopher Nolan",
       year: 2008,
-      dateAdded: '2023-02-21'
+      dateAdded: '2023-02-23'
     },
     {
       title: "Pulp Fiction",
@@ -54,7 +53,7 @@ class App extends Component {
       imdbRating: 8.9,
       director: "Quentin Tarantino",
       year: 1994,
-      dateAdded: '2023-02-22'
+      dateAdded: '2023-02-24'
     },
     {
       title: "The Lord of the Rings: The Return of the King",
@@ -64,7 +63,7 @@ class App extends Component {
       imdbRating: 8.9,
       director: "Peter Jackson",
       year: 2003,
-      dateAdded: '2023-02-23'
+      dateAdded: '2023-02-25'
     },
     {
       title: "Forrest Gump",
@@ -74,7 +73,7 @@ class App extends Component {
       imdbRating: 8.8,
       director: "Robert Zemeckis",
       year: 1994,
-      dateAdded: '2023-02-24'
+      dateAdded: '2023-02-25'
     },
     {
       title: "Inception",
@@ -84,7 +83,7 @@ class App extends Component {
       imdbRating: 8.8,
       director: "Christopher Nolan",
       year: 2010,
-      dateAdded: '2023-02-24'
+      dateAdded: '2023-02-25'
     },
     {
       title: "The Matrix",
@@ -94,7 +93,7 @@ class App extends Component {
       imdbRating: 8.7,
       director: "Lana Wachowski, Lilly Wachowski",
       year: 1999,
-      dateAdded: '2023-02-24'
+      dateAdded: '2023-02-25'
     },
     {
       title: "Schindler's List",
@@ -119,6 +118,7 @@ class App extends Component {
   ]
 }
 
+//'2023-02-25'
 // create simple method here to remove character
 removeMovie = (index) => {
   //now that we've defined this.state, we can use 
@@ -173,7 +173,7 @@ return (
        movieData={this.state.movies}
        removeMovie={this.removeMovie}
      />
-     
+     <AddMovie />
      <Form  addMovie={this.addMovie}/>
      
      </div>
